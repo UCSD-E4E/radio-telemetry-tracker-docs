@@ -5,7 +5,7 @@ Tracker project.
 ## Subprojects
 The RTT project has been divided up into the following components:
 - UI Board (https://github.com/UCSD-E4E/radio_collar_tracker_uib)
-- Payload (https://github.com/UCSD-E4E/radio_collar_tracker_dsp)
+- Payload (https://github.com/UCSD-E4E/radio_collar_tracker_dsp, https://github.com/UCSD-E4E/radio_collar_tracker_dsp2)
 - Ground Control Station (https://github.com/UCSD-E4E/radio_collar_tracker_gcs)
 - Comms (https://github.com/UCSD-E4E/radio_collar_tracker_comms)
 
