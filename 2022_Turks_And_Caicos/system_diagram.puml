@@ -1,0 +1,74 @@
+@startuml Direct Integration System Diagram
+[DJI M300] as dji
+[Payload SDK Adapter Board] as sdk_adapter
+[Up Core] as OBC
+[Software Defined Radio] as SDR
+[Low Noise Amplifier] as LNA
+[VHF Antenna] as payload_antenna
+[USB Storage] as storage
+[Ground Control Station] as gcs
+
+interface "DJI Skyport V2 Adapter" as skyport
+interface "5V2A" as payload_5v2a
+interface "Up Core.USB 3.0" as obc_usb3
+interface "3v3 UART" as payload_uart
+interface "Up Core.USB 2.0" as obc_usb2
+interface "WiFi" as obc_wifi
+
+dji --> skyport
+skyport --> sdk_adapter
+sdk_adapter --> payload_5v2a
+payload_5v2a --> OBC
+payload_5v2a --> LNA
+
+payload_antenna -> LNA
+LNA -> SDR
+SDR -> obc_usb3
+obc_usb3 -> OBC
+OBC <-> obc_usb2
+obc_usb2 -> storage
+
+sdk_adapter <--> payload_uart
+payload_uart <--> obc_usb2
+
+OBC <--> obc_wifi
+obc_wifi <--> gcs
+@enduml
+
+@startuml Independent Payload System Diagram
+[DJI M300] as dji
+[Payload SDK Adapter Board] as sdk_adapter
+[Up Core] as OBC
+[Software Defined Radio] as SDR
+[Low Noise Amplifier] as LNA
+[VHF Antenna] as payload_antenna
+[USB Storage] as storage
+[Ground Control Station] as gcs
+[Payload GPS] as payload_gps
+
+interface "DJI Skyport V2 Adapter" as skyport
+interface "5V2A" as payload_5v2a
+interface "Up Core.USB 3.0" as obc_usb3
+interface "3v3 UART" as payload_uart
+interface "Up Core.USB 2.0" as obc_usb2
+interface "WiFi" as obc_wifi
+
+dji --> skyport
+skyport --> sdk_adapter
+sdk_adapter --> payload_5v2a
+payload_5v2a --> OBC
+payload_5v2a --> LNA
+
+payload_antenna -> LNA
+LNA -> SDR
+SDR -> obc_usb3
+obc_usb3 -> OBC
+OBC <-> obc_usb2
+obc_usb2 -> storage
+
+sdk_adapter <--> payload_uart
+payload_gps <--> obc_usb2
+
+OBC <--> obc_wifi
+obc_wifi <--> gcs
+@enduml
