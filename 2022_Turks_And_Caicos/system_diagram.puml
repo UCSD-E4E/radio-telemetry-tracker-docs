@@ -72,3 +72,27 @@ payload_gps <--> obc_usb2
 OBC <--> obc_wifi
 obc_wifi <--> gcs
 @enduml
+
+@startuml Radio Collar Tracker: TCI Wiring Diagram
+[Software Defined Radio] as SDR
+[On-Board Computer] as OBC
+[VHF Antenna] as ANT
+[LNA] as LNA
+[Data Drive] as USB_DATA
+[GPS Receiver] as GPS
+[12V to 5V Regulator] as PRIMARY_REG
+[DJI Skyport V2 Adapter] as SKYPORT
+[UI Board] as UIB
+interface "Wifi Antenna" as WIFI_ANT
+
+OBC --> SDR : USB 3.0 A to USB 3.0 micro B
+SDR --> LNA : SMA-M to SMA-M
+LNA --> ANT : SMA-M to SMA-M
+OBC --> WIFI_ANT : uFl to RP-SMA-M
+OBC --> UIB : 11 pos cable
+UIB --> USB_DATA : USB 2.0 A to USB Device
+UIB --> GPS : 6 pin cable
+SKYPORT --> PRIMARY_REG : XT30 to device
+PRIMARY_REG --> OBC : device to 5.5mm Barrel
+SKYPORT --> LNA : XT30 to device
+@enduml
