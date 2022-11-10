@@ -19,16 +19,16 @@
 |----------------|--------|
 | Termination 1  | XT30-M |
 | Termination 2  | Device |
-| Cable Type     | 16 AWG |
-| Cable Length   | 6.0 in |
+| Cable Type     | 20 AWG |
+| Cable Length   | 3.0 in |
 
 # OBC Power Cable
 | Parameter      | Value                     |
 |----------------|---------------------------|
 | Termination 1  | Device                    |
 | Termination 2  | Right Angle 5.5 mm barrel |
-| Cable Type     | 16 AWG                    |
-| Cable Length   | 6.0 in                    |
+| Cable Type     | 20 AWG                    |
+| Cable Length   | 4.0 in                    |
 
 # SDR USB Cable
 https://www.usbfirewire.com/parts/rr-alml-xxgr.html#RR-ALML-06GR
@@ -45,7 +45,7 @@ https://www.usbfirewire.com/parts/rr-alml-xxgr.html#RR-ALML-06GR
 | Termination 1  | SMA-M             |
 | Termination 2  | Right Angle SMA-M |
 | Cable Type     | RG316             |
-| Cable Length   | 4.0 in            |
+| Cable Length   | 3.5 in            |
 
 # OBC UIB Cable
 | Parameter      | Value           |
