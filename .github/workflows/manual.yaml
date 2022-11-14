@@ -10,6 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: manual/manual.tex
+          work_in_root_file_dir: True
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
