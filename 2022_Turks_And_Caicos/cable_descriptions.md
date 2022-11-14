@@ -12,7 +12,7 @@
 | Termination 1  | SMA-M   |
 | Termination 2  | Device  |
 | Cable Type     | RG316   |
-| Cable Length   | 12.0 in |
+| Cable Length   | 20.0 in |
 
 # 5V Regulator Power Cable
 | Parameter      | Value  |
