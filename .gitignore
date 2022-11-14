@@ -6,3 +6,9 @@
 *.gz
 
 .ipynb_checkpoints/
+manual/manual.fdb_latexmk
+manual/manual.fls
+manual/manual.glo
+manual/manual.ist
+manual/manual.pdf
+manual/manual.toc
