@@ -4,7 +4,7 @@
 | Termination 1  | XT30-M |
 | Termination 2  | Device |
 | Cable Type     | 22 AWG |
-| Cable Length   | 2.0 in |
+| Cable Length   | 4.0 in |
 
 # Antenna Feed Cable
 | Parameter      | Value   |
