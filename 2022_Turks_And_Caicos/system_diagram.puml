@@ -78,21 +78,53 @@ obc_wifi <--> gcs
 [On-Board Computer] as OBC
 [VHF Antenna] as ANT
 [LNA] as LNA
-[Data Drive] as USB_DATA
-[GPS Receiver] as GPS
 [12V to 5V Regulator] as PRIMARY_REG
 [DJI Skyport V2 Adapter] as SKYPORT
-[UI Board] as UIB
 interface "Wifi Antenna" as WIFI_ANT
+component "UI Board" {
+    port p1
+    [UI Board] as UIB
+    [Data Drive] as USB_DATA
+    [GPS Receiver] as GPS
+    p1 --> UIB
+    UIB --> USB_DATA : USB 2.0 A to USB Device
+    UIB --> GPS : 6 pin cable
+}
+[SiK Radio] as radio
+
+component "UI Board Cable"{
+    port UIB_IN
+    interface USB1_in
+    interface USB2_in
+    interface UART_in
+    interface USB1_out
+    interface USB2_out
+    interface UART_out
+    [USB Hub] as hub
+    port USB3_out
+    port UIB_OUT
+
+    UIB_IN --> USB1_in
+    UIB_IN --> USB2_in
+    UIB_IN --> UART_in
+    USB1_out --> UIB_OUT
+    USB2_out --> UIB_OUT
+    UART_out --> UIB_OUT
+    USB2_in --> hub
+    hub --> USB3_out
+    hub --> USB2_out
+    USB1_in --> USB1_out
+    UART_in --> UART_out
+}
 
 OBC --> SDR : USB 3.0 A to USB 3.0 micro B
 SDR --> LNA : SMA-M to SMA-M
 LNA --> ANT : SMA-M to SMA-M
 OBC --> WIFI_ANT : uFl to RP-SMA-M
-OBC --> UIB : 11 pos cable
-UIB --> USB_DATA : USB 2.0 A to USB Device
-UIB --> GPS : 6 pin cable
+OBC --> UIB_IN : 11 pos cable
+UIB_OUT --> p1
 SKYPORT --> PRIMARY_REG : XT30 to device
 PRIMARY_REG --> OBC : device to 5.5mm Barrel
 SKYPORT --> LNA : XT30 to device
+USB3_out --> radio
 @enduml
