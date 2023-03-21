@@ -93,16 +93,16 @@ component "UI Board" {
 [SiK Radio] as radio
 
 component "UI Board Cable"{
-    port UIB_IN
+    portin UIB_IN
+    portout USB3_out
+    portout UIB_OUT
+    [USB Hub] as hub
     interface USB1_in
     interface USB2_in
     interface UART_in
     interface USB1_out
     interface USB2_out
     interface UART_out
-    [USB Hub] as hub
-    port USB3_out
-    port UIB_OUT
 
     UIB_IN --> USB1_in
     UIB_IN --> USB2_in
