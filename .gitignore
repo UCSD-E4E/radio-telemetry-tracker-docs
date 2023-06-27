@@ -12,3 +12,5 @@ manual/manual.glo
 manual/manual.ist
 manual/manual.pdf
 manual/manual.toc
+
+*.sav
