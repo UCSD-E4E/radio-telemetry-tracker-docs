@@ -7,7 +7,7 @@ It is recommended to add the network to your machine so you don't have to log in
 
 The steps to do this on **Windows** are as follows:
 1. In File Explorer, go to "This PC" and right-click. Select "Add a network location".
-2. Click "Next" twice, then enter "\\e4e-nas.ucsd.edu\rct" in the text box for the network address.
+2. Click "Next" twice, then enter "\\\\e4e-nas.ucsd.edu\\rct" in the text box for the network address.
 3. Give a name to the network. You should include "rtt" and "e4e" in some way so you know what it is in the future.
 4. You can now access RTT's directory on the NAS as a network location by returning to "This PC" on your file system.
 

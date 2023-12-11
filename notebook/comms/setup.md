@@ -1,3 +1,5 @@
+# Installing RCTComms Package
+
 To install RCTComms, perform the following:
 1. Navigate to the base directory of your local copy of the repo (`cd path/to/directory/radio_collar_tracker_comms`)
 2. Activate your environment, if installing to one (for example, `conda activate rctGCS`)

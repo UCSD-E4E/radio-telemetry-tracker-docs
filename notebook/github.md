@@ -7,7 +7,7 @@ The training form went through creation of a new branch, but here is a brief rev
 
 Navigate to the appropriate base branch by checking it out. This might be main/master if you are creating a new feature, or it could be a feature branch if you are contributing to the same feature branch as other team members, for example.
 
-Create your new branch. Give it a name which succinctly summarizes its purpose, and add your initials at the end of the name. For example, John Doe making a branch for the feature "foo" would name the branch foo_JD.
+Create your new branch. Give it a name which succinctly summarizes its purpose, and add your initials at the end of the name. For example, John Doe making a branch for the feature "foo" would name the branch `foo_JD`.
 
 Checkout your new branch so your changes appear on that branch.
 
@@ -32,7 +32,7 @@ When you are done with a feature or bug fix and are ready to merge it into the b
 	2. Pull any updates to the base branch so that your local copy is up-to-date
 	3. Checkout your branch again
 	4. Merge the base branch into your branch with `git merge <base_branch_name>`
-	5. If there were no conflicts, you're done and can push your changes and continue to step 2. If there were conflicts, resolve them, commit your changes, and run any tests again to be sure everything functions as expected. Restart at (a) once tests pass.
+	5. If there were no conflicts, you're done and can push your changes and continue to step 2. If there were conflicts, resolve them, commit your changes, and run any tests again to be sure everything functions as expected. Restart at (a) once your branch's version has been tested.
 2. Request review from anyone who worked on the branch with you, plus the project lead.
 3. Respond to any questions or concerns from your reviewers, and do not merge until your reviewers have approved the request. If you make further changes or the base branch receives updates before your merge is completed, repeat step 1.
 

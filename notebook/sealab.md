@@ -3,6 +3,6 @@ Sealab is E4E's lab. This is CSE 2127. If you don't know where this is, go up th
 
 ### Lab rules:
 - Wear close-toed shoes.
-- We say no food or drink, but if you fudge this one just make sure food and drink are never placed near electronics or machinery. Place them on the ground, on a chair, or on an otherwise cleared desk.
+- We say no food or drink, but if you fudge this one just make sure food and drink are *never* placed near electronics or machinery. Place them on the ground, on a chair, or on an otherwise cleared desk.
 - Clean up after yourself and leave the lab at least as clean as you found it. Store items in a secure and organized manner, throw away any trash, and for goodness' sake please don't leave abandoned drink containers (this is a problem).
-Do not use equipment which you have not been trained to use. If your tasks require the use of equipment for which you are not trained, ask for training.
+- Do not use equipment which you have not been trained to use. If your tasks require the use of equipment for which you are not trained, ask for training.

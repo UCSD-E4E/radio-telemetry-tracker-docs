@@ -16,7 +16,7 @@ We use qgis to construct our UI. See the gcs repo's README for installation and 
 		- `option_vars.py`: module defining option variables related to our DSP, GPS, SDR, and overall system
 		- `popups.py`: module to create popup windows from our UI, including definitions of certain popups such as those to edit config settings, connect to our OBC, and add target frequencies, among others
 	- `config.py`: module to provide global configuration structures for reading config file and storing and changing config variables
-	- `droneSimulator.py`: module to simulate a drone as it completes a mission, for the purposes of testing local connection and the GCS's responses to simulated pings and other packets; see Drone Simulator for more details on usage
+	- `droneSimulator.py`: module to simulate a drone as it completes a mission, for the purposes of testing local connection and the GCS's responses to simulated pings and other packets; see `drone_simulator.md` for more details on usage
 	- `ping.py`: module specifying ping objects, including coordinates, timestamp, and signal characteristics, among other data, and performing operations with them
 	- `rctCore.py`: module containing the GCS core model, including classes for the payload model, states, and events
 	- `rctGcs.py`: script to show our GCS UI; this is the file to run to see our UI, but most changes you make will likely be to the files outlined above
@@ -27,7 +27,7 @@ We use qgis to construct our UI. See the gcs repo's README for installation and 
 This does not cover all files in the repo but should serve as a whirlwind tour of some key pieces.
 
 ### Testing:
-This module will need to be manually tested when making changes. Changes which are purely visual or deal only with local data may largely be tested by running `rctGCS.py`. However, more thorough testing involving connecting to and communicating with the system should be done before making any merges to the master branch. Here's a recommended outline of key functionality which should be tested:
+This module will need to be manually tested when making changes. Changes which are purely visual or deal only with local data may largely be tested by running `rctGCS.py`. However, more thorough testing involving connecting to and communicating with the system should be done before making any merges to the master branch. Here's a recommended outline of key functionality which should be tested (list is not exhaustive):
 
 **GCS UI Tests**:
 - In drone mode, can connect to drone, show 1 connection, and disconnect
@@ -39,12 +39,12 @@ This module will need to be manually tested when making changes. Changes which a
 - Can start/stop recording
 
 **Simulator Tests**:
-- In drone mode, simulator can host GCS, start, stop, and doMission
-- In tower mode, can connect multiple sockets to GCS, start, stop, and doMission
+- In drone mode, simulator can host GCS, start, stop, and do_mission
+- In tower mode, can connect multiple sockets to GCS, start, stop, and do_mission
 
 
 ### Visualization
-puml for "simplified" view of this repo (throw into plantuml or similar to view diagram):
+puml for "simplified" view of this repo:
 ```plantuml
 @startuml
 frame config {
