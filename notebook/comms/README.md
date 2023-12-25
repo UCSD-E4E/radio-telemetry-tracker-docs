@@ -58,3 +58,54 @@ RCTAbstractTransport : portName(self) -> str
 RCTAbstractTransport : reconnect_on_fail(self, timeout: int = 30)
 @enduml
 ```
+```mermaid
+---
+title: RTT Communications Library
+---
+classDiagram
+    class RCTAbstractTransport{
+        +__init__()
+        +open(self)
+        +receive(self, buffer_len: int, timeout: int=None) -> Tuple[bytes, str]
+        +send(self, data: bytes, dest)
+        +close(self)
+        +isOpen(self) -> bool
+        +portName(self) -> str
+        +reconnect_on_fail(self, timeout: int = 30)
+    }
+    class mavComms{
+        +RCTAbstractTransport self.__port
+        +T otherVars
+        +methodsRemovedForSimplicity()
+    }
+    class gcsComms{
+        +RCTAbstractTransport self.sock
+        +T otherVars
+        +methodsRemovedForSimplicity()
+    }
+    mavComms *-- RCTAbstractTransport
+    gcsComms *-- RCTAbstractTransport
+
+    class rctBinaryPacket{
+        +bytes payload
+        +int packetClass
+        +int packetID
+        +__init__(self, payload: bytes, packetClass: int, packetID: int)
+        +to_bytes(self) -> bytes
+        +getClassIDCode(self) -> int
+        +__str__(self) -> str
+        +__repr__(self) -> str
+        +__eq__(self, packet) -> bool
+        +from_bytes(cls, packet: bytes) -> rctBinaryPacket
+        +matches(cls, packetClass: int, packetID: int) -> bool
+    }
+
+    RCTAbstractTransport <|-- RCTUDPClient
+    RCTAbstractTransport <|-- RCTUDPServer
+    RCTAbstractTransport <|-- RCTPipeClient
+    RCTAbstractTransport <|-- RCTTCPClient
+    RCTAbstractTransport <|-- RCTTCPConnection
+    RCTAbstractTransport <|-- RCTSerialTransport
+    rctBinaryPacket *-- rctPackets
+    rctBinaryPacket *-- rctCommands
+```
