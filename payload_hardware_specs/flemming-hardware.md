@@ -14,5 +14,5 @@
 
 ### DJI Skyport V2 for Power
 - [Payload SDK Development Kit 2.0](https://store.dji.com/product/psdk-development-kit-v2?vid=89481)
-- [13.6v to 12v Voltage Regulator](https://www.amazon.com/Stabilizer-Converter-Waterproof-Automatic-Transformer/dp/B097BHZW7N?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A3OXSZC8CUOU5G&th=1)
+- [13.6v to 12v Voltage Regulator](https://www.amazon.com/Stabilizer-Converter-Waterproof-Automatic-Transformer/dp/B097BHZW7N)
 
