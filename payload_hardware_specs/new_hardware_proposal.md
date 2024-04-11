@@ -29,7 +29,7 @@ The new 7000 series SBCs are powered by 12v instead of 5v, which means we would 
 | [13.6v to 12v Voltage Regulator](https://www.amazon.com/dp/B081RG8XP5)                                                   | $16.99  | 3        |                       |
 |                                                                                                                          |         |          |                       |
 | Cost                                                                                                                     | $637.11 |          |                       |
-| Shipping/Handling Estimation (+25%)                                                                                      | $159.28 |          |                       |
+| S&H/Tax Estimation (+25%)                                                                                                | $159.28 |          |                       |
 |                                                                                                                          |         |          |                       |
 | Total                                                                                                                    | $796.39 |          |                       |
 
