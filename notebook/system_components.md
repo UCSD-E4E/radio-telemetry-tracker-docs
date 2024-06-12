@@ -1,7 +1,40 @@
 # Overview of System Electronics
 
-- UP Core single-board computer
-  - requires 5V 1500mA-4000mA power supply
+```plantuml
+@startuml Functional System Components
+node "Sensor Package" {
+  [On-Board Computer] as obc
+  [Software Defined Radio] as sdr
+  [Low-Noise Amplifier] as lna
+  [VHF Antenna] as ant
+  [Telemetry Link] as node_telem
+  [Data Storage] as recorder
+  [GPS Receiver] as gps
+  [Magnetometer] as compass
+
+  ant --> lna : RF Signal
+  lna --> sdr : Amplified RF Signal
+  sdr --> obc : Digitized RF Signal
+  gps --> obc : Location and Timing
+  compass --> obc : Orientation
+  obc <-> node_telem : Control Signals and Pings
+  obc --> recorder : Recorded Data
+}
+
+node "Control Node" {
+  [Control Software] as gcs
+  [Telemetry Link] as gcs_telem
+
+  gcs_telem <-> gcs : Control Signals and Pings
+}
+
+node_telem <-> gcs_telem : Control Signals and Pings
+
+@enduml
+```
+
+- UP 7000 single-board computer
+  - requires 12V 5A power supply
 - USRP B200mini software-defined radio (SDR)
   - Also connected to low-noise amplifier (LNA)
 - NMEA GPS
@@ -13,33 +46,38 @@
 
 puml for system, as of Dec 2023 (throw into plantuml to view diagram):
 ```plantuml
-@startuml system
-node "Payload" {
-  5V - [UP Core]
+@startuml Implemented Electronic Components
+node "Sensor Package" {
+  [UP 7000] as obc
+  [USRP B200mini] as sdr
+  [NooElec LANA] as lna
+  [VHF Antenna] as ant
+  [900 MHz SiK Radio] as node_telem
+  [USB Thumb Drive] as recorder
+  [UBlox GPS Receiver] as gps
+  [HMC5983 Magnetometer] as compass
 
-  [USRP]
-  5V - [LNA]
-  [Antenna]
+  [Power Supply] as psu
 
-  [USB Splitter]
-  [SiK Radio]
-  [Thumb Drive]
+  ant --> lna : RF Signal
+  lna --> sdr : Amplified RF Signal
+  sdr --> obc : Digitized RF Signal
+  gps --> obc : Location and Timing
+  compass --> obc : Orientation
+  obc <-> node_telem : Control Signals and Pings
+  obc --> recorder : Recorded Data
 
-  [PCB]
-  [GPS]
-  [Magnetometer]
+  psu -> lna : 5V
+  psu -> obc : 12V
 }
 
-[Antenna] --> [LNA]
-[LNA] --> [USRP]
-[USRP] --> [UP Core]
+node "Control Node" {
+  [Control Software] as gcs
+  [900 MHz SiK Radio] as gcs_telem
 
-[SiK Radio] --> [USB Splitter]
-[Thumb Drive] --> [USB Splitter]
-[USB Splitter] --> [UP Core]
+  gcs_telem <-> gcs : Control Signals and Pings
+}
 
-[GPS] --> [PCB]
-[Magnetometer] --> [PCB]
-[PCB] --> [UP Core]
+node_telem <-> gcs_telem : Control Signals and Pings
 @enduml
 ```
