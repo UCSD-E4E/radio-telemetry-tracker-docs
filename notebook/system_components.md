@@ -3,22 +3,28 @@
 ```plantuml
 @startuml Functional System Components
 node "Sensor Package" {
-  [On-Board Computer] as obc
   [Software Defined Radio] as sdr
   [Low-Noise Amplifier] as lna
   [VHF Antenna] as ant
-  [Telemetry Link] as node_telem
   [Data Storage] as recorder
   [GPS Receiver] as gps
   [Magnetometer] as compass
+  package "On-Board Computer" {
+    [Ping Detector] as detector
+    [Georeferencing] as georeferencing
+    [Controller] as controller
+  }
+  [Telemetry Link] as node_telem
 
   ant --> lna : RF Signal
   lna --> sdr : Amplified RF Signal
-  sdr --> obc : Digitized RF Signal
-  gps --> obc : Location and Timing
-  compass --> obc : Orientation
-  obc <-> node_telem : Control Signals and Pings
-  obc --> recorder : Recorded Data
+  sdr --> detector : Digitized RF Signal
+  detector -> georeferencing : Pings
+  gps --> georeferencing : Location and Timing
+  compass --> georeferencing : Orientation
+  georeferencing -r-> node_telem : Pings
+  node_telem -u-> controller : Control Signals
+  georeferencing -u-> recorder : Recorded Data
 }
 
 node "Control Node" {
@@ -28,7 +34,7 @@ node "Control Node" {
   gcs_telem <-> gcs : Control Signals and Pings
 }
 
-node_telem <-> gcs_telem : Control Signals and Pings
+node_telem <-l-> gcs_telem : Control Signals and Pings
 
 @enduml
 ```
