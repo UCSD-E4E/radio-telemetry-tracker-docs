@@ -11,10 +11,10 @@ Recently, the project has been working on a new, tower-based system, in which se
 3. Communication Package
 4. Digital Signal Processing (DSP) Package
 
-## System Architecture
+## Drone System Architecture
 
 ![Repository Relationship Diagram](../../diagrams/img/repo_relationship.png)
-![Drone Hardware Diagram](../../diagrams/img/drone_hardware_setup)
+![Drone Hardware Diagram](../../diagrams/img/drone_hardware_setup.png)
 
 For more details on how these components interact, please see our [Repository Structure](repository-structure.md) document.
 

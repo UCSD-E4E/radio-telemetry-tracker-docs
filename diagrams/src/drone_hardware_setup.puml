@@ -60,6 +60,8 @@ note right of sbc
   Intel N100 Processor
   8GB Memory
   64GB Storage
+
+  radio_telemetry_tracker-drone-fds repository
 end note
 
 note right of sdr
@@ -70,6 +72,10 @@ end note
 note right of lna
   Low Noise Amplifier
   for signal boost
+end note
+
+note right of gcs_computer
+  radio_telemetry_tracker-drone-gcs repository
 end note
 
 @enduml
