@@ -1,0 +1,17 @@
+@startuml repo_relationship
+rectangle "radio-telemetry-tracker-docs" as docs
+rectangle "radio-telemetry-tracker-drone-comms-package" as comms
+rectangle "radio-telemetry-tracker-drone-fds" as fds
+rectangle "radio-telemetry-tracker-drone-gcs" as gcs
+rectangle "radio_collar_tracker_dsp2" as dsp2
+
+fds <--> comms : uses
+gcs <--> comms : uses
+fds --> dsp2 : uses
+
+note bottom of comms
+  FDS and GCS communicate
+  via this package
+end note
+
+@enduml

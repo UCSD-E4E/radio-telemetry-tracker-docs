@@ -1,16 +1,13 @@
-# Radio Telemetry Tracker Project Documentation
-This repository provides program level documentation for the Radio Telemetry 
-Tracker project.
+# Radio Telemetry Tracker Project Handbook
 
-## Subprojects
-The RTT project has been divided up into the following components:
-- UI Board (https://github.com/UCSD-E4E/radio_collar_tracker_uib)
-- Payload (https://github.com/UCSD-E4E/radio_collar_tracker_dsp, https://github.com/UCSD-E4E/radio_collar_tracker_dsp2)
-- Ground Control Station (https://github.com/UCSD-E4E/radio_collar_tracker_gcs)
-- Comms (https://github.com/UCSD-E4E/radio_collar_tracker_comms)
+## Table of Contents
+1. [Project Overview](docs/project/project-overview.md)
+2. [Repository Structure](docs/project/repository-structure.md)
+3. [Development Guidelines](docs/development/README.md)
+4. [Hardware Specifications](docs/hardware/specifications.md)
 
-The RTT project also contains the following obsolete components that are 
-retained for archival purposes:
-- Postprocess (https://github.com/UCSD-E4E/radio_collar_tracker_postprocess)
-- Signal characterization (https://github.com/UCSD-E4E/rct_signal_characterization)
+For more detailed information on specific components, please refer to the linked documents above.
 
+## Project Kanban Board
+
+[Project Kanban Board](https://github.com/orgs/UCSD-E4E/projects/17)
