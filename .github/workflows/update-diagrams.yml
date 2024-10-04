@@ -1,0 +1,26 @@
+name: Update PlantUML Diagrams
+
+on:
+  push:
+    paths:
+      - 'diagrams/src/**.puml'
+      - 'docs/**/*.md'
+
+jobs:
+  update-diagrams:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Generate PlantUML Diagrams
+      uses: cloudbees/plantuml-github-action@v1.1.0
+      with:
+        args: -v -tpng diagrams/src/**/*.puml -o ../img
+    
+    - name: Push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add diagrams/img/
+        git commit -m "Update PlantUML diagrams" || echo "No changes to commit"
+        git push

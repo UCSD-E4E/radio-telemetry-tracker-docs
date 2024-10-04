@@ -1,0 +1,75 @@
+@startuml drone_hardware_setup
+
+!define RECTANGLE_COLOR #DCEBF7
+!define COMPONENT_COLOR #AED6F1
+!define ARROW_COLOR #3498DB
+
+skinparam rectangle {
+    BackgroundColor RECTANGLE_COLOR
+    BorderColor #2980B9
+    RoundCorner 10
+}
+
+skinparam component {
+    BackgroundColor COMPONENT_COLOR
+    BorderColor #2980B9
+}
+
+skinparam arrow {
+    Color ARROW_COLOR
+    Thickness 1.5
+}
+
+skinparam note {
+    BackgroundColor #FCF3CF
+    BorderColor #F1C40F
+}
+
+rectangle "Drone Payload" {
+    together {
+        component "UP 7000 SBC" as sbc
+        component "NEO-M9N GPS" as gps
+        component "USRP B200mini-i SDR" as sdr
+    }
+    together {
+        component "Nooelec LaNA" as lna
+        component "RFM95W LoRa Radio" as lora_drone
+    }
+}
+
+rectangle "Ground Control Station" {
+    together {
+        component "GCS Computer" as gcs_computer
+        component "RFM95W LoRa Radio" as lora_gcs
+    }
+}
+
+cloud "Satellite" as satellite
+component "VHF Wildlife Transmitter" as transmitter
+
+satellite -[ARROW_COLOR]-> gps : GPS signals
+transmitter -[ARROW_COLOR]-> lna : VHF signals
+lna -[ARROW_COLOR]-> sdr : Amplified signals
+sdr <-[ARROW_COLOR]-> sbc : Data exchange
+gps <-[ARROW_COLOR]-> sbc : Position data
+lora_drone <-[ARROW_COLOR]-> sbc : Communication
+lora_drone <..[ARROW_COLOR].> lora_gcs : Long-range communication
+lora_gcs <-[ARROW_COLOR]-> gcs_computer : Data exchange
+
+note right of sbc
+  Intel N100 Processor
+  8GB Memory
+  64GB Storage
+end note
+
+note right of sdr
+  Software Defined Radio
+  for signal processing
+end note
+
+note right of lna
+  Low Noise Amplifier
+  for signal boost
+end note
+
+@enduml
