@@ -8,4 +8,6 @@
 
 For more detailed information on specific components, please refer to the linked documents above.
 
+## Project Kanban Board
 
+[Project Kanban Board](https://github.com/orgs/UCSD-E4E/projects/17)
