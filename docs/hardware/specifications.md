@@ -6,39 +6,26 @@ This document outlines the current hardware specifications for the Radio Telemet
 
 ![Drone Hardware Setup Diagram](../../diagrams/img/drone_hardware_setup.png)
 
-### Single Board Computer
-- Model: UP 7000
-- Processor: Intel Processor N100
-- Memory: 8GB
-- Storage: 64GB
+### **Single Board Computer**: UP 7000 (Intel N100, 8GB RAM, 64GB eMMC)
 - [Product Link](https://up-shop.org/default/up-7000-series.html)
 
-### GPS + Compass
-- Model: SparkFun GPS Breakout - NEO-M9N, U.FL (Qwiic)
+### **GPS + Compass**: SparkFun GPS Breakout - NEO-M9N
 - [Product Link](https://mou.sr/3Pt2lmy)
 
-### Software Defined Radio
-- Model: USRP B200mini-i
+### **Software Defined Radio**: USRP B200mini-i
 - [Product Link](https://www.ettus.com/all-products/usrp-b200mini-i-2/)
 
-### Low Noise Amplifier
-- Model: Nooelec LaNA
+### **Low Noise Amplifier**: Nooelec LaNA
 - [Product Link](https://www.nooelec.com/store/lana.html?srsltid=AfmBOopzeX7KlBqEZARz0aIcDkEfL9iiwXlTAamh-N2XETJ2ykOVpHGz)
 
-### LoRa Communication
-- Model: RFM95W LoRa Radio
-- [Product Link](https://www.adafruit.com/product/3072)
-- 
+### **900 MHz Radio**: SiK Telemetry Radio V3
+- [Product Link](https://www.sparkfun.com/products/19032)
+
 ## Additional Recommended Components
 
 ### Power Source
 - DJI Skyport
 - Extension Board
-- Note: These components provide a reliable power supply for the drone payload.
-
-### Ground Control Station (GCS)
-- USB Breakout Board: For connecting the radio to the GCS computer
-- Note: This allows for easier connection and management of the radio on the ground.
 
 ### Antennas
 - It is recommended to use appropriate antennas where possible for both the drone payload and GCS to optimize signal reception and transmission.

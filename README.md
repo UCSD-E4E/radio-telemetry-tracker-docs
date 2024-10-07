@@ -1,12 +1,17 @@
 # Radio Telemetry Tracker Project Handbook
 
-## Table of Contents
-1. [Project Overview](docs/project/project-overview.md)
-2. [Repository Structure](docs/project/repository-structure.md)
-3. [Development Guidelines](docs/development/README.md)
-4. [Hardware Specifications](docs/hardware/specifications.md)
+Welcome to the Radio Telemetry Tracker project! This handbook provides a comprehensive guide to our project's structure, development processes, and hardware specifications. 
 
-For more detailed information on specific components, please refer to the linked documents above.
+## Table of Contents
+1. [Project Overview](docs/project-overview/project-overview.md)
+2. Development Guidelines:
+   - [Git Workflow](docs/development-guides/git-workflow.md)
+   - [Repository Naming Conventions](docs/development-guides/repo-naming-conventions.md)
+   - [Repository Setup Checklist](docs/development-guides/repo-setup-checklist.md)
+3. [Hardware Specifications](docs/hardware/specifications.md)
+4. [License Information](LICENSE.md)
+
+For specific information on components, workflows, and guidelines, refer to the linked documents.
 
 ## Project Kanban Board
 

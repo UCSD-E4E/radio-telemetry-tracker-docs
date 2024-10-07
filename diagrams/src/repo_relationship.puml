@@ -4,6 +4,8 @@ rectangle "radio-telemetry-tracker-drone-comms-package" as comms
 rectangle "radio-telemetry-tracker-drone-fds" as fds
 rectangle "radio-telemetry-tracker-drone-gcs" as gcs
 rectangle "radio_collar_tracker_dsp2" as dsp2
+rectangle "radio-telemetry-tracker-tower-solar-tools" as solar
+rectangle "radio-telemetry-tracker-drone-casing-code" as casing
 
 fds <--> comms : uses
 gcs <--> comms : uses

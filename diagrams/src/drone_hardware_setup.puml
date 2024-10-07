@@ -33,14 +33,14 @@ rectangle "Drone Payload" {
     }
     together {
         component "Nooelec LaNA" as lna
-        component "RFM95W LoRa Radio" as lora_drone
+        component "SiK Telemetry Radio V3" as sik_drone
     }
 }
 
 rectangle "Ground Control Station" {
     together {
         component "GCS Computer" as gcs_computer
-        component "RFM95W LoRa Radio" as lora_gcs
+        component "SiK Telemetry Radio V3" as sik_gcs
     }
 }
 
@@ -52,9 +52,9 @@ transmitter -[ARROW_COLOR]-> lna : VHF signals
 lna -[ARROW_COLOR]-> sdr : Amplified signals
 sdr <-[ARROW_COLOR]-> sbc : Data exchange
 gps <-[ARROW_COLOR]-> sbc : Position data
-lora_drone <-[ARROW_COLOR]-> sbc : Communication
-lora_drone <..[ARROW_COLOR].> lora_gcs : Long-range communication
-lora_gcs <-[ARROW_COLOR]-> gcs_computer : Data exchange
+sik_drone <-[ARROW_COLOR]-> sbc : Communication
+sik_drone <..[ARROW_COLOR].> sik_gcs : Long-range communication
+sik_gcs <-[ARROW_COLOR]-> gcs_computer : Data exchange
 
 note right of sbc
   Intel N100 Processor
