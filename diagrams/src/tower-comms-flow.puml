@@ -1,0 +1,42 @@
+@startuml
+actor GCS_Server as GCS
+
+== Tower 1 Interaction ==
+participant Tower1_FDS as T1
+T1 -> T1: Complete startup initialization
+T1 -> GCS: Send server search request
+GCS -> T1: Respond with configuration data
+
+group Tower 1: Operational Phase
+  loop Heartbeat Loop
+    T1 -> GCS: Send heartbeat (lat [double], long [double] alt [double], power [uint32, next shutdown timestamp [uint64], next startup timestamp [uint64])
+  end
+  loop Transmitter Data Transmission
+    T1 -> GCS: Send transmitter packet (frequency [int32], timestamp [uint64], amplitude [float], lat [double], long [double] alt [double])
+  end
+end
+
+== Tower 2 Interaction ==
+participant Tower2_FDS as T2
+T2 -> T2: Complete startup initialization
+T2 -> GCS: Send server search request
+GCS -> T2: Respond with configuration data
+
+group Tower 2: Operational Phase
+  loop Heartbeat Loop
+    T2 -> GCS: Send heartbeat (lat [double], long [double] alt [double], power [uint32, next shutdown timestamp [uint64], next startup timestamp [uint64])
+  end
+  loop Transmitter Data Transmission
+    T2 -> GCS: Send transmitter packet (frequency [int32], timestamp [uint64], amplitude [float], lat [double], long [double] alt [double])
+  end
+end
+
+== Command and Control ==
+GCS -> T1: Trigger command (e.g., force shutdown, adjust timings)
+GCS -> T2: Trigger command (e.g., force shutdown, adjust timings)
+
+== Shutdown and Restart Cycle ==
+T1 -> T1: Shutdown and restart cycle (repeat)
+T2 -> T2: Shutdown and restart cycle (repeat)
+
+@enduml
