@@ -20,7 +20,7 @@
 - **Project Cost:** 
   - **Before Tax/S&H:** $40.87
   - **Tax/S&H Rate:** 25%
-  - **Total Cost** $40.87 $\times$ 1.25 =  $51.09
+  - **Total Cost** $40.87 * 1.25 =  $51.09
 
 ## Notes
 - Parts are used to put the hardware of the drone payload into the casing.
