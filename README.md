@@ -1,19 +1,39 @@
 # Radio Telemetry Tracker Project Handbook
 
-Welcome to the Radio Telemetry Tracker project! This handbook provides a comprehensive guide to our project's structure, development processes, and hardware specifications. 
+Welcome to the Radio Telemetry Tracker project! This handbook provides a comprehensive guide to our project's structure, development processes, and technical specifications.
 
-## Table of Contents
-1. [Project Overview](docs/project-overview/project-overview.md)
-2. Development Guidelines:
-   - [Intro Project](docs/development-guides/intro-project.md)
-   - [Git Workflow](docs/development-guides/git-workflow.md)
-   - [Repository Naming Conventions](docs/development-guides/repo-naming-conventions.md)
-   - [Repository Setup Checklist](docs/development-guides/repo-setup-checklist.md)
-3. [Hardware Specifications](docs/hardware/specifications.md)
-4. [License Information](LICENSE.md)
+## Documentation Structure
 
-For specific information on components, workflows, and guidelines, refer to the linked documents.
+1. [Getting Started](docs/getting-started/README.md)
+   - Project overview
+   - Development environment setup
+   - Quick start guide
 
-## Project Kanban Board
+2. [Technical Documentation](docs/technical/README.md)
+   - Hardware specifications
+   - Architecture
+   - Software components
 
-[Project Kanban Board](https://github.com/orgs/UCSD-E4E/projects/17)
+3. [Development Processes](docs/processes/README.md)
+   - Git workflow
+   - Repository setup
+   - Coding standards
+
+4. [Reference Documentation](docs/reference/README.md)
+   - API documentation
+   - Hardware reference
+   - Troubleshooting
+
+5. [Project Management](docs/project-management/README.md)
+   - Meeting notes
+   - Project proposals
+   - Purchases and BOMs
+
+## Project Resources
+
+- [Project Kanban Board](https://github.com/orgs/UCSD-E4E/projects/17)
+- [License Information](LICENSE.md)
+
+## Contributing
+
+Please refer to our [Development Processes](docs/processes/README.md) for guidelines on contributing to this project.

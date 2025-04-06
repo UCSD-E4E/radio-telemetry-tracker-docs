@@ -6,12 +6,12 @@ Recently, the project has been working on a new, tower-based system, in which se
 
 ## Drone System Architecture
 
-![Drone Hardware Diagram](../../diagrams/img/drone_hardware_setup.png)
+![Drone Hardware Diagram](../assets/diagrams/img/drone-hardware-setup.png)
 
 
 ## Repository Structure
 
-![Repository Relationship Diagram](../../diagrams/img/repo_relationship.png)
+![Repository Relationship Diagram](../assets/diagrams/img/repo-relationship.png)
 
 1. **[radio-telemetry-tracker-docs](https://github.com/UCSD-E4E/radio-telemetry-tracker-docs)**: Central project documentation and coordination
 

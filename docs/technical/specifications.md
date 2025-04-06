@@ -4,7 +4,7 @@ This document outlines the current hardware specifications for the Radio Telemet
 
 ## Drone Payload
 
-![Drone Hardware Setup Diagram](../../diagrams/img/drone_hardware_setup.png)
+![Drone Hardware Setup Diagram](../assets/diagrams/img/drone-hardware-setup.png)
 
 ### **Single Board Computer**: UP 7000 (Intel N100, 8GB RAM, 64GB eMMC)
 - [Product Link](https://up-shop.org/default/up-7000-series.html)
