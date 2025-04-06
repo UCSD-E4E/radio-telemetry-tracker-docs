@@ -12,7 +12,7 @@
 | 3         | Ebay Item 196450973334  | SMA Female Panel Mount to SMA Male Right Angle | Ebay     | $4.33         | 1   | $4.33      | https://www.ebay.com/itm/196450973334                                                | Length: 8inch-20cm. Used for SDR antenna.                                           |
 | 4         | ASIN B09BNPX3XJ         | Vecro Straps                                   | Amazon   | $8.73         | 1   | $8.73      | https://www.amazon.com/VELCRO-Brand-Fasteners-Industrial-VEL-30703-USA/dp/B09BNPX3XJ | Size: 4in by 2in. Used to hold down parts in payload that do not have screw mounts. |
 | 5         | ASIN B0CL8NPTWK         | M2.5 Hex Socket Head Cap Screws                | Amazon   | $10.89        | 1   | $10.89     | https://www.amazon.com/Socket-Threads-Extended-Extra-Long-Stainless/dp/B0CL8NPTWK    | Size: M2.5 by 60 mm. Used to hold layers of payload together.                       |
-| 6         | ASIN B09SPRWRLT         | M2.5 by 10mm Machine Screws                    | Amazon   | $6.98         | 1   | $ 6.98     | https://www.amazon.com/Machine-Phillips-Stainless-Fasteners-Aicosineg/dp/B09SPRWRLT  | Used to hold layers of payload down                                                 |
+| 6         | ASIN B09SPRWRLT         | M2.5 by 10mm Machine Screws                    | Amazon   | $6.98         | 1   | $ 6.98     | https://www.amazon.com/Machine-Phillips-Stainless-Fasteners-Aicosineg/dp/B09SPRWRLT  | Used to hold layers of payload down.                                                 |
 
 
 ## Summary
