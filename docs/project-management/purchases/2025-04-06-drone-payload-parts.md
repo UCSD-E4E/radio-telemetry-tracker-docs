@@ -2,7 +2,7 @@
 
 ## Project: Drone Payload Casing/Assembly Parts
 **Date:** Sunday, April 6, 2025
-**Prepared by:** Tyler Flar
+**Prepared by:** Yves Mojica, Tyler Flar
 **Status:** Draft
 
 | Line Item | P/N                     | Description                                    | Vendor   | Cost per Item | Qty | Total Cost | Link                                                                                 | Notes                                                                               |
