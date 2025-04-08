@@ -7,8 +7,8 @@
 ---
 
 ## Attendees
-- Tyler Flar
-- Yves Mojica
+- Tyler F.
+- Yves M.
 
 ---
 
