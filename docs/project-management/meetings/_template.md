@@ -53,7 +53,17 @@
 
 ---
 
-### Next Meeting
+### Next Meetings
+
+**Meeting:** [Insert Meeting]  
 **Date:** [Insert Date]  
 **Time:** [Insert Time]  
 **Location:** [Insert Location]
+
+**Meeting:** [Insert Meeting]  
+**Date:** [Insert Date]  
+**Time:** [Insert Time]  
+**Location:** [Insert Location]
+
+
+*(Repeat for additional meetings as needed)*
