@@ -6,7 +6,7 @@ Our project follows the Gitflow workflow for structured version control and coll
 Gitflow uses multiple branches to maintain a clean history and facilitate collaboration. The key branches are:
 
 - `main`: Production-ready code
-- `develop`: The integration branch for features
+- `dev`: The integration branch for features
 
 Additional branches:
 - **Feature**: `feature/[feature-name]`
@@ -26,7 +26,7 @@ Additional branches:
 
 3. **Hotfixes**
    - Branch: `hotfix/[hotfix-name]`
-   - Fix the issue in `main`, then merge into both `main` and `develop`
+   - Fix the issue in `main`, then merge into both `main` and `dev`
    - Tag the version
 
 ## Versioning and Release Process
