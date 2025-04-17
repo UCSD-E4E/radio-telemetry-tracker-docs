@@ -40,7 +40,6 @@
 - **Key Discussion Points:**
   - Tyler reviewed the project overview and timeline document (project repo) shared on Slack.
   - Overall, the document was approved with only minor comments and clarifications:
-    - The project diagram needed a note that the towers will manage power on/off themselves using hardware timers and command packets.
     - There was a suggestion to simulate TCP connections as an optional test method to avoid dependence on hardware.
     - The team discussed the benefits of using Protobuff for defining and packaging data packets to simplify serial communication.
     - Detailed dialogue was held regarding the method to monitor battery state-of-charge (using a voltage divider) and the challenges of converting digital readings to analog values.
