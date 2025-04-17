@@ -63,7 +63,7 @@
 
 ### Next Meetings
 
-**Meeting:** 207 Weekly Meeting
+**Meeting:** 207 Weekly Meeting  
 **Date:** Tuesday, April 22nd, 2025  
-**Time:** 7 PM Pacific Daylight Time
+**Time:** 7 PM Pacific Daylight Time  
 **Location:** Zoom
