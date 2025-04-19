@@ -2,8 +2,8 @@
 
 ## Drone GCS Debug
 
-**Date:** Wednesday, April 9th, 2025
-**Time:**  3:55 PM - 4:32 PM Pacific Time
+**Date:** Wednesday, April 9th, 2025  
+**Time:**  3:55 PM - 4:32 PM Pacific Daylight Time  
 **Location:** Zoom
 
 ---

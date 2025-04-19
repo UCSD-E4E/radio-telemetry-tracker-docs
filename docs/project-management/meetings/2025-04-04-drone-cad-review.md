@@ -1,7 +1,7 @@
 # Meeting Minutes
 
-**Date:** Friday, April 4, 2025
-**Time:** 4:00 PM - 4:18 PM
+**Date:** Friday, April 4, 2025  
+**Time:** 4:00 PM - 4:18 PM  
 **Location:** Zoom
 
 ---
