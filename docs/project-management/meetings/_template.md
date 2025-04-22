@@ -27,20 +27,16 @@
 ### Discussion
 
 #### [Agenda Item 1 Title]
-- **Key Discussion Points:**
+- **Discussion Points:**
   - [Point 1]
   - [Point 2]
-- **Decisions Made:**
-  - [Decision/Outcome]
 - **Action Items:**
   - [Task/Action] — *Assigned to:* [Name] — *Due:* [Date]
 
 #### [Agenda Item 2 Title]
-- **Key Discussion Points:**
+- **Discussion Points:**
   - [Point 1]
   - [Point 2]
-- **Decisions Made:**
-  - [Decision/Outcome]
 - **Action Items:**
   - [Task/Action] — *Assigned to:* [Name] — *Due:* [Date]
 
@@ -48,22 +44,7 @@
 
 ---
 
-### Additional Notes
-- [Any extra details or comments]
-
----
-
-### Next Meetings
-
-**Meeting:** [Insert Meeting]  
+### Next Meeting
 **Date:** [Insert Date]  
 **Time:** [Insert Time]  
 **Location:** [Insert Location]
-
-**Meeting:** [Insert Meeting]  
-**Date:** [Insert Date]  
-**Time:** [Insert Time]  
-**Location:** [Insert Location]
-
-
-*(Repeat for additional meetings as needed)*
