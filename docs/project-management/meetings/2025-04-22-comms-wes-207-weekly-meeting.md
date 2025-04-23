@@ -1,8 +1,8 @@
 # Meeting Minutes
 
-## [Insert Meeting Type]
+## Comms (WES 207) Weekly Meeting 
 
-**Date:** Comms (WES 207) Weekly Meeting 
+**Date:** Tuesday, April 22nd, 2025
 **Time:** 6:57PM - 7:27 PM Pacific Daylight Time  
 **Location:** Zoom
 
