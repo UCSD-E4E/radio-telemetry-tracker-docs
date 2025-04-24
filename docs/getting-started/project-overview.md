@@ -28,12 +28,3 @@ Recently, the project has been working on a new, tower-based system, in which se
 7. **[radio-telemetry-tracker-drone-casing-code](https://github.com/UCSD-E4E/radio-telemetry-tracker-drone-casing-code)**: CAD files for the drone casing
 
 Each repository has its own README with more detailed information about its specific role and setup instructions.
-
-## References
-
-The `references` directory contains bibliography files for project-related publications:
-
-1. **project_publications.bib**: Contains citations for publications directly about the Radio Telemetry Tracker project.
-2. **related_papers.bib**: Contains citations for papers related to the field of radio telemetry tracking but not specifically about this project.
-
-These .bib files can be used with reference management software and LaTeX to easily cite relevant literature in project documentation and publications.
