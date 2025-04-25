@@ -23,5 +23,3 @@ This checklist ensures consistent setup across all repositories in the Radio Tel
 ## 4. Documentation
 
 - Include `README.md` and `LICENSE.md` in each repository
-
-By following these practices, we ensure consistency across all repositories.

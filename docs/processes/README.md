@@ -1,15 +1,13 @@
-# Development Processes
+# Radio Telemetry Tracker (RTT) Processes Documentation
 
-This section contains documentation about our development processes, workflows, and guidelines.
+This directory contains documentation about the processes and workflows used in the Radio Telemetry Tracker (RTT) project.
 
 ## Contents
 
-1. [Git Workflow](git-workflow.md) - Our Git branching strategy and workflow
-2. [Repository Setup](repo-setup-checklist.md) - Checklist for setting up new repositories
-3. [Repository Naming Conventions](repo-naming-conventions.md) - Standards for naming repositories
-4. [Intro Project](intro-project.md) - Guide for new team members' first project
+- [Repository Setup Checklist](repo-setup-checklist.md): Guidelines for setting up new repositories with consistent configurations, including branch protection, linters, workflows, and documentation requirements.
 
-## Related Documentation
+- [Git Workflow](git-workflow.md): Detailed explanation of our Gitflow-based development workflow, including branching strategies, versioning, and release processes.
 
-- [Technical Documentation](../technical/README.md)
-- [Getting Started](../getting-started/README.md) 
+- [Repository Naming Conventions](repo-naming-conventions.md): Standards for naming repositories and branches to maintain consistency across the project.
+
+- [Introduction Project](intro-project.md): A starter project for new contributors to get familiar with the project's technologies and development practices.

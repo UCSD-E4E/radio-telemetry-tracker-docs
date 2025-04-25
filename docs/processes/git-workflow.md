@@ -17,11 +17,11 @@ Additional branches:
 
 1. **Feature Development**
    - Branch: `feature/[feature-name]`
-   - Merge: Into `develop` after approval
+   - Merge: Into `dev` after approval
 
 2. **Preparing a Release**
    - Branch: `release/[version-number]`
-   - Merge: Into both `main` and `develop` after bug fixes
+   - Merge: Into both `main` and `dev` after bug fixes
    - Tag the release: `vX.Y.Z`
 
 3. **Hotfixes**
