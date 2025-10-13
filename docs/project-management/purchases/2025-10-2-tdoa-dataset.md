@@ -3,7 +3,7 @@
 ## Project: TDOA Dataset
 **Date:** Thursday, October 2, 2025  
 **Prepared by:** Tyler Flar  
-**Status:** Draft
+**Status:** In Review
 
 | Line Item | P/N              | Description                                                 | Vendor           | Cost per Item | Qty Total | Total Cost | Link                                                                                                                                                                                                   | Notes                                  |
 | --------- | ---------------- | ----------------------------------------------------------- | ---------------- | ------------- | --------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
@@ -17,16 +17,14 @@
 | 8         | 784190-01        | Enclosure Kit for USRP B200                                 | Ettus            | $173.00       | 1         | $173.00    | https://www.ettus.com/all-products/usrp-b200-enclosure/                                                                                                                                                | SDR enclosure                          |
 | 9         | 783454-01        | Board Mounted GPSDO                                         | Ettus            | $1,362.00     | 1         | $1,362.00  | https://www.ettus.com/all-products/gpsdo-tcxo-module/                                                                                                                                                  | GPSDO for USRP B200                    |
 | 10        | 783480-01        | GPS Antenna                                                 | Ettus            | $119.00       | 1         | $119.00    | https://www.ettus.com/all-products/gps-ant-5v/                                                                                                                                                         | GPS antenna for USRP B200              |
+| 11        | N/A              | BD-2 Transmitter                                            | Holohil          | $185.00       | 6         | $1,110.00  | N/A                                                                                                                                                                                                    | Transmitters. See emails               |
 
 ## Summary
-- **Total Items:** 10
+- **Total Items:** 11
 - **Total Project Cost:**
-  - **Before Tax/S&H:** $4,066.00
+  - **Before Tax/S&H:** $4,965.85
   - **Tax/S&H Rate:** 25%
-  - **Total Cost** $4,066.00 * 1.25 =  $5,082.50
-
-## Notes
-- Transmitters will be purchased separately as need to contact Hololic.
+  - **Total Cost** $4,965.85 * 1.25 =  $6,206.06
 
 ## Approval 
 - **Date:** [Date]
